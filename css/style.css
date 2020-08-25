@@ -1,0 +1,82 @@
+body{
+    font-style: serif;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: gold;
+    position: fixed;
+    margin: -10px;
+    margin-right: -10px;
+}
+h1{
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+    left: 550px;
+}
+@media screen and (max-width:500px){
+    h1{
+        left: 130px;
+    }
+}
+.nav{
+    float: right;
+    position: relative;
+    top: 30px;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.nav a i{
+    padding: 5px;
+}
+.nav a:hover{
+    text-decoration: underline;
+    font-size: 22px;
+    color: grey;
+    transition: 0.4s;
+    padding: 20px;
+}  
+@media screen and (max-width:500px){
+    .nav a{
+        display: none;
+    }
+    .nav a.icon{
+        display: block;
+        margin-top: -10px;
+    }
+} 
+@media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      
+      
+    }
+    .nav.responsive a {
+      float: none;
+      display: inline-block;
+      text-align: left;
+      position: relative;
+      top:40px;
+    }
+    .nav.responsive a:hover{
+        transition: 0.8s;
+    }
+    header{
+        height: 120px;
+    }
+  } 
+  .center{
+      margin:0px -10px;
+      position: absolute;
+      top: 117px;
+  }
+  
