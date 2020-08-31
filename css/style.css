@@ -1,5 +1,6 @@
 body{
     font-style: serif;
+    background-color: grey;
 }
 header{
     width: 100%;
@@ -8,7 +9,9 @@ header{
     position: fixed;
     margin: -10px;
     margin-right: -10px;
+    z-index: 2;
 }
+
 h1{
     position: absolute;
     top: 0px;
@@ -41,7 +44,12 @@ h1{
     color: grey;
     transition: 0.4s;
     padding: 20px;
-}  
+} 
+@media screen and (min-width:1000px){
+    .icon{
+        display: none;
+    }
+} 
 @media screen and (max-width:500px){
     .nav a{
         display: none;
@@ -74,9 +82,86 @@ h1{
         height: 120px;
     }
   } 
-  .center{
-      margin:0px -10px;
+  #center{
+      margin:0px auto;
       position: absolute;
-      top: 117px;
+      top: 90px;
+      background-color: grey;
+      color:rgb(49, 41, 13);
+      width: 100%;
+      height: 500px;
+      display: grid;
+      grid-template: repeat(2,1fr) / repeat(3,1fr);
+      grid-gap: 20px 30px;
+      align-items: center;
+      justify-items: center;
+      text-align: center;
   }
-  
+
+  @media screen and (max-width: 500px){
+      #center{
+          top: 130px;
+          grid-template: repeat(3,1fr) / repeat(2,1fr);
+      }
+  }
+  #center i{
+      font-size: 30px;
+  }
+  #center a{
+      text-decoration: none;
+      box-sizing: border-box;
+      background-color: rgb(81, 197, 65);
+      color: black;
+      padding: 5px;
+      border: 2px solid black;
+      border-radius: 5px;
+      opacity: 0.5;
+  }
+  #center a:hover{
+      opacity: 1;
+  }
+  .one:hover{
+      color: black;
+      cursor: pointer;
+  }
+  .two:hover{
+    color: black;
+    cursor: pointer;
+}
+.three:hover{
+    color: black;
+    cursor: pointer;
+}
+.four:hover{
+    color: black;
+    cursor: pointer;
+}
+.five:hover{
+    color: black;
+    cursor: pointer;
+}
+.six:hover{
+    color: black;
+    cursor: pointer;
+}
+footer{
+    background-color: gold;
+    position: relative;
+    top:600px;
+    margin-left: -10px;
+    margin-right: -15px
+}
+@media screen and (max-width:500px){
+    footer{
+        top: 800px;
+    }
+}
+.container{
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 20px;
+    padding-top: 10px;
+}
